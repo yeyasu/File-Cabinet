@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cabnet</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body class="body">
+	<div class="header">
+		<div class="header-inner">
+			<%= link_to 'FileCabinet',root_path, id: "logo" %>
+		</div>
+		<nav>
+			<%if user_signed_in?%>
+				<%= link_to "Create Doc ", new_doc_path %>
+				<%= link_to "Sign out", destroy_user_session_path, method: :delete %>
+			<%else%>
+				<%= link_to "Login", new_user_session_path %>
+			<% end %>
+		</nav>
+	</div>
+	<p class="notice"><%= notice %></p>
+	<p class="alert"><%= alert %></p>
+	<div class="content">
+		<%= yield %>
+	</div>
+</body>
+</html>

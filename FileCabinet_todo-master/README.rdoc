@@ -1,0 +1,15 @@
+== README
+Basic Todo App In Ruby On Rails
+
+This App written in 
+ Framework: Ruby on Rails
+ Language: Ruby
+ DataBase: MySql
+ 
+https://github.com/avinashdvv/FileCabinet_todo/blob/master/app/assets/images/repo.png
+
+
+Done by Yafet Woldegabriel
+
+Ruby Database of Avina.
+

@@ -1,0 +1,75 @@
+// Place all the styles related to the welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import 'colors.scss';
+.welcome-page{
+	a{
+		text-decoration: none;
+	}
+	button{
+		background: $base-clr;
+		font-weight: bold;
+		border: none;
+		cursor: pointer;
+		a{
+			color: white;
+			padding: 17px 15px;
+			display: block;
+		}
+	}
+	
+
+}
+.banner{
+	height: 30rem;
+	display: table;
+	width: 100%;
+	.banner_content{
+		height: 100%;
+		width: 100%;
+		display: table-cell;
+		vertical-align: middle;
+		text-align: center;
+		h1{
+			color: $base-clr;
+			font-size: 3.5rem;
+			margin-bottom: 1rem;
+		}
+		p{
+			color: lighten($base-clr, 10%);
+		}
+		h1{
+			color: $base-clr;
+			font-size: 3.5rem;
+			margin-bottom: 1rem;
+		}
+	}
+}
+.callouts{
+	background: url('type_writer.jpg');
+	background-size: 100% 100%;
+	color: white;
+	text-align: center;	
+	padding: 10rem;
+	font-size: 17px;
+	h2{
+		margin-bottom: 0px;
+		font-size: 3rem;
+	}
+}
+.bottom-page{
+	height: 30rem;
+	display: table;
+	width: 100%;
+	.wrapper{
+		display: table-cell;
+		height: 100%;
+		vertical-align: middle;
+		text-align: center;
+		h2{
+			font-size: 3rem;
+			color: lighten(black, 30%);
+			margin-bottom: 0px;
+		}
+	}
+}

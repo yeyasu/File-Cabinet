@@ -1,0 +1,44 @@
+@import 'colors.scss';
+
+h1.title,h2.title{
+	color: $dark-org-clr;
+	text-align: center;
+}
+.wrapper-with-padding{
+	padding: 0px 10rem;
+}
+a{
+	color: $base-clr;
+	text-decoration: none;
+}
+form{
+	label{
+		font-weight: bold;
+		font-size: 16px;
+		margin-bottom: 10px;
+		display: block;
+	}
+}
+input,textarea{
+	border: 1px solid gray;
+	width: 100%;
+	border-radius: 2px;
+	padding: 12px 10px;
+	margin-bottom:10px;
+}
+input[type*="checkbox"] {
+	width: auto;
+	margin-right: 20px;
+}
+button,.btn{
+	width: auto;
+	background: $base-clr;
+	font-weight: bold;
+	color: white;
+	border: none;
+	cursor: pointer;
+	margin: auto;
+	&:hover{
+		box-shadow: 0px 3px 10px gray;
+	}
+}

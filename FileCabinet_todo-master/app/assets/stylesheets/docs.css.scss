@@ -1,0 +1,49 @@
+// Place all the styles related to the Docs controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import 'colors.scss';
+.doc-dashboard{
+	padding: 0px 10rem;
+	h2 a{
+		color: $base-clr;
+		text-decoration: none;
+	}
+	.doc{
+		background: $dark-org-clr;
+		padding: 10px 20px;
+		margin-bottom: 20px;
+		border-radius: 10px;
+		color: white;
+		h2{
+			color: black;
+		}
+		p.content{
+			padding: 10px;
+			border: 1px solid white;
+		}
+	}
+}
+.doc-show{
+	padding: 0px 10rem;
+	p{
+		margin-bottom: 20px;
+		padding: 20px;
+		line-height: 1.4;
+	}
+	.buttons{
+	text-align: center;
+	a.btn{
+		color: $base-clr;
+		background: white;
+		cursor: pointer;
+		font-weight: bold;
+		border: 3px solid $base-clr;
+		padding: 12px 10px;
+		border-radius: 2px;
+		text-decoration: none;
+		&:hover{
+			box-shadow: 0px 2px 30px gray;
+		}
+	}
+}
+}
